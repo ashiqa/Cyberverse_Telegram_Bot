@@ -3,7 +3,7 @@ import mysql.connector as connector
 
 class DBHelper:
     def __init__(self):
-        self.con = connector.connect(host='ashq.mysql.pythonanywhere-services.com',port='3306', user='ashq', password='qwerty123ashi', database='ashq$cyberverse', auth_plugin='mysql_native_password')
+        self.con = connector.connect(host='ashq.mysql.pythonanywhere-services.com',port='3306', user='***', password='****', database='ashq$cyberverse', auth_plugin='mysql_native_password')
         query='CREATE TABLE IF NOT EXISTS ScoreTable (userID INTEGER PRIMARY KEY,firstID text,lastID text,score INTEGER DEFAULT 0)'
         cur=self.con.cursor()
         cur.execute(query)
